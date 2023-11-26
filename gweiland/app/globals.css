@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  margin: 0;
+ /* width: 100vw;  */
+  height: 100vh;
+
+  
+}
+.mainContainer{
+ width: 100%;
+}
+.whiteColor{
+  color: white;
+}
+.iconsize{
+  font-size: 20px;
+}
+.brava{
+  font-size: 30px;
+  color: #E1C300;
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: 600;
+}
+.flexPropertyNav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bannerImg{
+  width: 100%;
+ height: 80vh;
+ 
+
+}
+.bannerContainer{
+ width: 100%;
+ position: relative;
+
+}
+.bannerHoverTextContainer {
+
+  position: absolute;
+  width: min-content;
+  top: 50%; 
+  left: 20%; 
+  transform: translate(-50%, -50%);
+  text-align: left;
+ 
+}
+.hoverText{ 
+  color: rgb(0, 0, 0);
+  font-family: "MV Boli", Times, serif;
+    font-weight: 900;
+
+}
+.chatIcon {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.716);
+  border-radius: 50%;
+  padding: 10px;
+}
+.iconsizeChat{
+  font-size: 40px;
+  color: aliceblue;
+}
+.slideShowSingleContainer{
+  width: 24%;
+  /* width: 100%; */
+  height: 120px;
+  border-radius: 60px 0 0 60px;
+  background-color: black;
+  
+   
+}
+.slideShowImg{
+ height: 100%;
+ width: 50%;
+ border-radius: 100%;
+
+
+}
+@media only screen and (max-width: 1024px) {
+  .bannerImg {
+    height: 50vh;
+  }
+  .slideShowSingleContainer{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 500px) {
+ 
+  .slideShowSingleContainer{
+    width: 100%;
+  }
+}
+
+
